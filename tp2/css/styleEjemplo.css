@@ -1,0 +1,6 @@
+input{
+    margin: 7px 0px;
+}
+input[type=text],input[type=email]{
+    width: 350px;
+}
