@@ -1,0 +1,23 @@
+body{
+    background-color: #00FF00;
+}
+.caja{
+    background-color: #ffff00;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    margin: 75px 350px;
+}
+
+.imagen {
+    margin: auto auto;
+    width: 500px;
+    height: 500px;
+    /* fill:red; */
+    filter: invert(14%) sepia(83%) saturate(4469%) hue-rotate(355deg) brightness(108%) contrast(118%);
+    /* filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%) */
+}
+
+.verde {
+    filter: hue-rotate(120deg);
+  }
