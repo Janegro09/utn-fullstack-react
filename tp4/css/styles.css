@@ -1,0 +1,42 @@
+body{
+    margin:0 80px;
+    background-color: lightgray;
+}
+.container{
+    background-color: white;
+}
+.container-text{
+    display: flex;
+    flex-direction: row;
+}
+.articulos{
+    background-color: lightpink;
+    display: inline-block;
+    min-width: 75%;
+    flex-direction: row;
+}
+article{
+    background-color: lightgreen;
+    display: inline-block;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+article img{
+    width: inherit;
+}
+aside{
+    background-color: lightseagreen;
+    padding: 10px;
+}
+
+footer{
+    color: linen;
+    background-color: lightslategrey;
+    padding: 10px 20px;
+    justify-content: center;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+}

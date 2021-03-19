@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+}
+.menu a{
+    text-decoration: none;
+}
+.der{
+    justify-content: right;
+}
+.izq{
+    justify-content: left;
+}
