@@ -69,3 +69,20 @@ footer a{
 footer a:visited{
     color: linen;
 }
+
+@media (max-width:800px){
+    .articulos{
+        column-count: 1;
+    }
+}
+@media (max-width:600px){
+    .container-text{
+        display: grid;
+        flex-direction: row-reverse;
+    }
+    .articulos{
+        width: 100%;
+    }
+    
+}
+
