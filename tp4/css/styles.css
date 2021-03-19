@@ -1,5 +1,5 @@
 body{
-    margin:0 80px;
+    margin:0 15%;
     background-color: lightgray;
 }
 hr{
@@ -14,7 +14,7 @@ hr{
     width: 80px;
 }
 .articulos{
-    min-width: 75%;
+    min-width: 70%;
     align-items: start;
     flex-wrap: wrap;
     column-count: 2;
@@ -22,16 +22,19 @@ hr{
     display: table-column;
 }
 article{
-    width: 400px;
+    width: 350px;
     padding: 10px;
     margin: 10px;
     display: inline-block;
+}
+article p{
+    text-align: center;
 }
 .row-container {
     display: flex;
 }
 article img{
-    width: 90%;
+    width: 100%;
 }
 aside{
     padding: 10px;
@@ -43,10 +46,13 @@ aside{
 footer{
     color: linen;
     background-color: lightslategrey;
-    padding: 10px 20px;
+    padding: 45px 20px;
     justify-content: center;
     text-align: center;
 }
 footer a{
     text-decoration: none;
+}
+footer a:visited{
+    color: linen;
 }
