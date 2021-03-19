@@ -1,7 +1,10 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 20px 5px;
+    padding: 10px 5px;
+    background-color: white;
+    align-items: center;
+    margin: 10px 0 0;
 }
 .menu a{
     text-decoration: none;
