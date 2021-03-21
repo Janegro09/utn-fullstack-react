@@ -15,8 +15,15 @@
 .menu a:visited{
     color: #000;
 }
+.menu a:hover{
+    background-color: lightgray;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 2px;
+}
 .menu{
     padding: 0 10px;
+    font-size: 18px;
 }
 .der{
     justify-content: right;
