@@ -1,10 +1,12 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px;
+    padding: 10px 0px;
     background-color: white;
     align-items: center;
     margin: 10px 0 0;
+    position: fixed;
+    width: 70%;
 }
 .menu a{
     text-decoration: none;
@@ -13,9 +15,13 @@
 .menu a:visited{
     color: #000;
 }
+.menu{
+    padding: 0 10px;
+}
 .der{
     justify-content: right;
 }
+
 .izq{
     justify-content: left;
 }
