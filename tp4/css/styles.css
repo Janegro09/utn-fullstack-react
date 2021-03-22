@@ -9,7 +9,6 @@ hr{
     display: flex;
     flex-direction: row;
     background-color: #FFF;
-    margin-top: 113px;
 }
 .imagen img{
     width: 80px;
@@ -24,9 +23,16 @@ hr{
 }
 
 article{
+    cursor: pointer;
     padding: 8px;
     margin: 1px;
     display: inline-block;
+    transition: .5s;
+}
+article:hover{
+    transition: .5s;
+    background: rgba(0, 0, 0, 0.699);
+    color: white;
 }
 article p{
     text-align: center;

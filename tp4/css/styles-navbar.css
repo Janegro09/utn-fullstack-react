@@ -5,20 +5,20 @@
     background-color: white;
     align-items: center;
     margin: 10px 0 0;
-    position: fixed;
-    width: 70%;
+}
+header{
+    position: sticky;
+    top: -2px;
 }
 .menu a{
     text-decoration: none;
-    padding: 0 3px;
+    padding: 25px 3px;
 }
 .menu a:visited{
     color: #000;
 }
 .menu a:hover{
     background-color: lightgray;
-    padding-top: 25px;
-    padding-bottom: 25px;
     border-radius: 2px;
 }
 .menu{
@@ -31,4 +31,12 @@
 
 .izq{
     justify-content: left;
+}
+.imagen:hover{
+    transition: .5s;
+    transform:rotate(360deg);
+}
+.imagen{
+    cursor: pointer;
+    transition: .75s;
 }
