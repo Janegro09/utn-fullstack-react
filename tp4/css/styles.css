@@ -1,11 +1,11 @@
 body{
-    margin:0 15%;
     background-color: lightgray;
 }
 hr{
     margin: 0;
 }
 .container-text{
+    margin:0 15%;
     display: flex;
     flex-direction: row;
     background-color: #FFF;
