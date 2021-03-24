@@ -93,6 +93,8 @@ footer a:visited{
     .articulos{
         width: 100%;
     }
-    
+    .story{
+        display: none;
+    }
 }
 
