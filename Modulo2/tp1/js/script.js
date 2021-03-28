@@ -8,32 +8,17 @@ var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Ag
 
 var diasDelMes= [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-var meses31=[];
-var meses30=[]
-
-for (let i = 0; i < diasDelMes.length; i++) {
-    const element = diasDelMes[i];
-    switch (element) {
-        case 30:
-            meses30.push(i)
-            break;
-        case 31:
-            meses31.push(i)
-            break;
-    
-        default:
-            break;
+console.log("Los meses con 31 días son: ")
+for (let i = 0; i < meses.length; i++) {
+    if(diasDelMes[i]==31){
+        console.log(meses[i])
+    }
+}
+console.log("");
+console.log("Los meses con 30 días son: ")
+for (let i = 0; i < meses.length; i++) {
+    if(diasDelMes[i]==30){
+        console.log(meses[i])
     }
 }
 
-console.log("Los meses con 31 son: ")
-for (let i = 0; i < meses31.length; i++) {
-    const e = meses31[i];
-    console.log(meses[e])
-}
-
-console.log("Los meses con 30 son: ")
-for (let i = 0; i < meses30.length; i++) {
-    const e = meses30[i];
-        console.log(meses[e])
-}
