@@ -59,6 +59,7 @@ quitar = (e) => {
     nombreProductos.forEach(anexarProductoEnLista);
     productosCompra.forEach(anexarProductoEnCarrito);
     cantidad.innerHTML=productosCompra.length;
+    document.querySelector("title").innerHTML="Unidad 2 - TP2 ("+cantidad.innerHTML+")";
 }
 
 vaciar = () => {
