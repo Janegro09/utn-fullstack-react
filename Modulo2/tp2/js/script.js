@@ -33,7 +33,7 @@ seleccionar=(e) => {
 
     nombreProductos=nombreProductos.filter(e => e!=producto);
     ul.innerHTML=" ";
-    ul2.innerHTML=" ";
+    // ul2.innerHTML=" ";
     total.innerHTML="Total: ";
     nombreProductos.forEach(anexarProductoEnLista);
     // productosCompra.forEach(anexarProductoEnCarrito);
