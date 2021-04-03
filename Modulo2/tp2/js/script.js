@@ -1,3 +1,4 @@
+//defino variables globales
 var totalCompra=0;
 var nombreProductos=productos.map(v=>{return v.nombre});
 var productosCompra = [];
@@ -10,6 +11,7 @@ ul2.setAttribute('class','productosCompra');
 document.querySelector(".productosDisponibles").appendChild(ul);
 document.querySelector(".productosDelCarrito").appendChild(ul2);
 
+//imprime en el dom los nombres de los productos
 anexarProductoEnLista = (e) => {
     var li = document.createElement('li');
     li.setAttribute('class','producto');
@@ -17,7 +19,7 @@ anexarProductoEnLista = (e) => {
     ul.appendChild(li);
     li.innerHTML = li.innerHTML + e;
 }
-
+//imprime los productos que tengo en el carrito
 anexarProductoEnCarrito = (e) => {
     var li = document.createElement('li');
     li.setAttribute('class','productoCarrito');
@@ -26,6 +28,10 @@ anexarProductoEnCarrito = (e) => {
     li.innerHTML = li.innerHTML + e;
 }
 
+productosCompra.forEach(anexarProductoEnCarrito);
+nombreProductos.forEach(anexarProductoEnLista);
+
+//Selecciona un producto disponible y lo coloca en el array del carrito
 seleccionar=(e) => {
     totalCompra=0;
     var producto = e.target.innerHTML;
@@ -39,7 +45,7 @@ seleccionar=(e) => {
 
     nombreProductos.forEach(anexarProductoEnLista);
 }
-
+//Quita del carrito un producto y lo coloca en el listado de productos
 quitar = (e) => {
     if(totalCompra==0){
         alert("Parece que tenes nuevos productos en el carrito, primero debés calcular antes de quitar productos");
@@ -57,7 +63,7 @@ quitar = (e) => {
     cantidad.innerHTML=productosCompra.length;
     document.querySelector("title").innerHTML="Unidad 2 - TP2 ("+cantidad.innerHTML+")";
 }
-
+//Limpia el carrito
 vaciar = () => {
     document.querySelector("title").innerHTML="Unidad 2 - TP2"
     nombreProductos=productos.map(v=>{return v.nombre});
@@ -70,7 +76,7 @@ vaciar = () => {
     nombreProductos.forEach(anexarProductoEnLista);
     totalCompra=0;
 }
-
+//Calcula el total del carrito
 comprar = () => {
     ul2.innerHTML=" ";    
     totalCompra=0;
@@ -91,5 +97,3 @@ comprar = () => {
 
 }
 
-productosCompra.forEach(anexarProductoEnCarrito);
-nombreProductos.forEach(anexarProductoEnLista);
