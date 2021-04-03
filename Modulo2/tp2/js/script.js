@@ -42,7 +42,7 @@ seleccionar=(e) => {
 
 quitar = (e) => {
     if(totalCompra==0){
-        alert("Debés calcular primero antes de quitar productos");
+        alert("Parece que tenes nuevos productos en el carrito, primero debés calcular antes de quitar productos");
         return;
     }
     var producto = e.target.innerHTML;
