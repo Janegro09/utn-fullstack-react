@@ -9,3 +9,7 @@ li{
 .producto{
     text-transform: capitalize;
 }
+.carrito{
+    width: 100px;
+    display: flex;
+}
