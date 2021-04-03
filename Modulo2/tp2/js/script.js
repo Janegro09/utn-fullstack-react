@@ -1,7 +1,6 @@
 var totalCompra=0;
 var nombreProductos=productos.map(v=>{return v.nombre});
 var productosCompra = [];
-// console.log(nombreProductos)
 var ul = document.createElement('ul');
 var ul2 = document.createElement('ul');
 let total=document.querySelector(".total");
@@ -29,10 +28,8 @@ anexarProductoEnCarrito = (e,i,array) => {
 seleccionar=(e) => {
     var producto = e.target.innerHTML;
     productosCompra.push(producto);
-    console.log(producto)
 
     nombreProductos=nombreProductos.filter(e => e!=producto);
-    // console.log(nombreProductos);
     ul.innerHTML=" ";
     ul2.innerHTML=" ";
     nombreProductos.forEach(anexarProductoEnLista);
@@ -42,10 +39,8 @@ seleccionar=(e) => {
 quitar = (e) => {
     var producto = e.target.innerHTML;
     nombreProductos.push(producto);
-    console.log(producto)
 
     productosCompra=productosCompra.filter(e => e!=producto);
-    // console.log(productosCompra);
     ul.innerHTML=" ";
     ul2.innerHTML=" ";
     total.innerHTML="Total: "
@@ -59,7 +54,6 @@ vaciar = () => {
     ul2.innerHTML=" ";
     ul.innerHTML=" ";
     total.innerHTML="Total: "
-    // console.log(nombreProductos)
     productosCompra.forEach(anexarProductoEnCarrito);
     nombreProductos.forEach(anexarProductoEnLista);
     totalCompra=0;
