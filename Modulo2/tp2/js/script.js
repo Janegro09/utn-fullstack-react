@@ -28,8 +28,6 @@ anexarProductoEnCarrito = (e) => {
     li.innerHTML = li.innerHTML + e;
 }
 
-productosCompra.forEach(anexarProductoEnCarrito);
-nombreProductos.forEach(anexarProductoEnLista);
 
 //Selecciona un producto disponible y lo coloca en el array del carrito
 seleccionar=(e) => {
@@ -97,3 +95,5 @@ comprar = () => {
 
 }
 
+productosCompra.forEach(anexarProductoEnCarrito);
+nombreProductos.forEach(anexarProductoEnLista);
