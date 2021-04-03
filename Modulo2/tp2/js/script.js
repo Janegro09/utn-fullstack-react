@@ -1,11 +1,11 @@
 //defino variables globales
-var totalCompra=0;
-var nombreProductos=productos.map(v=>{return v.nombre});
-var productosCompra = [];
-var ul = document.createElement('ul');
-var ul2 = document.createElement('ul');
+let totalCompra=0;
+let nombreProductos=productos.map(v=>{return v.nombre});
+let productosCompra = [];
+let ul = document.createElement('ul');
+let ul2 = document.createElement('ul');
 let total=document.querySelector(".total");
-var cantidad = document.querySelector(".cantidad");
+let cantidad = document.querySelector(".cantidad");
 ul.setAttribute('class','productos');
 ul2.setAttribute('class','productosCompra');
 document.querySelector(".productosDisponibles").appendChild(ul);
@@ -13,7 +13,7 @@ document.querySelector(".productosDelCarrito").appendChild(ul2);
 
 //imprime en el dom los nombres de los productos
 anexarProductoEnLista = (e) => {
-    var li = document.createElement('li');
+    let li = document.createElement('li');
     li.setAttribute('class','producto');
     li.onclick = seleccionar;
     ul.appendChild(li);
@@ -21,7 +21,7 @@ anexarProductoEnLista = (e) => {
 }
 //imprime los productos que tengo en el carrito
 anexarProductoEnCarrito = (e) => {
-    var li = document.createElement('li');
+    let li = document.createElement('li');
     li.setAttribute('class','productoCarrito');
     li.onclick = quitar;
     ul2.appendChild(li);
@@ -32,7 +32,7 @@ anexarProductoEnCarrito = (e) => {
 //Selecciona un producto disponible y lo coloca en el array del carrito
 seleccionar=(e) => {
     totalCompra=0;
-    var producto = e.target.innerHTML;
+    let producto = e.target.innerHTML;
     productosCompra.push(producto);
     cantidad.innerHTML=productosCompra.length;
 
@@ -49,7 +49,7 @@ quitar = (e) => {
         alert("Parece que tenes nuevos productos en el carrito, primero debés calcular antes de quitar productos");
         return;
     }
-    var producto = e.target.innerHTML;
+    let producto = e.target.innerHTML;
     nombreProductos.push(producto);
 
     productosCompra=productosCompra.filter(e => e!=producto);

@@ -23,7 +23,12 @@ li:hover{
     top: 100px;
     z-index: -1;
 }
-
+.productos li:hover{
+    color: green;
+}
+.productosCompra li:hover{
+    color: red;
+}
 .productoCarrito{
     text-transform: capitalize;
     
