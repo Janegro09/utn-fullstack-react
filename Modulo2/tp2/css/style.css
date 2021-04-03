@@ -21,3 +21,7 @@ li{
     z-index: -1;
 }
 
+.productoCarrito{
+    text-transform: capitalize;
+    
+}

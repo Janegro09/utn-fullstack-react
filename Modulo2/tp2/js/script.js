@@ -27,6 +27,7 @@ anexarProductoEnCarrito = (e) => {
 }
 
 seleccionar=(e) => {
+    totalCompra=0;
     var producto = e.target.innerHTML;
     productosCompra.push(producto);
     cantidad.innerHTML=productosCompra.length;
@@ -40,6 +41,10 @@ seleccionar=(e) => {
 }
 
 quitar = (e) => {
+    if(totalCompra==0){
+        alert("Debés calcular primero antes de quitar productos");
+        return;
+    }
     var producto = e.target.innerHTML;
     nombreProductos.push(producto);
 
