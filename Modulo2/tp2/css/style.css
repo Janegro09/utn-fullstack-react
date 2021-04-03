@@ -10,6 +10,7 @@ li{
 }
 .producto{
     text-transform: capitalize;
+    width: fit-content;
 }
 .carrito{
     position: absolute;
