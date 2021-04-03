@@ -4,6 +4,7 @@ var productosCompra = [];
 var ul = document.createElement('ul');
 var ul2 = document.createElement('ul');
 let total=document.querySelector(".total");
+var cantidad = document.querySelector(".cantidad");
 ul.setAttribute('class','productos');
 ul2.setAttribute('class','productosCompra');
 document.querySelector(".productosDisponibles").appendChild(ul);
@@ -28,12 +29,14 @@ anexarProductoEnCarrito = (e,i,array) => {
 seleccionar=(e) => {
     var producto = e.target.innerHTML;
     productosCompra.push(producto);
+    cantidad.innerHTML=productosCompra.length;
 
     nombreProductos=nombreProductos.filter(e => e!=producto);
     ul.innerHTML=" ";
     ul2.innerHTML=" ";
+    total.innerHTML="Total: ";
     nombreProductos.forEach(anexarProductoEnLista);
-    productosCompra.forEach(anexarProductoEnCarrito);
+    // productosCompra.forEach(anexarProductoEnCarrito);
 }
 
 quitar = (e) => {
@@ -46,6 +49,7 @@ quitar = (e) => {
     total.innerHTML="Total: "
     nombreProductos.forEach(anexarProductoEnLista);
     productosCompra.forEach(anexarProductoEnCarrito);
+    cantidad.innerHTML=productosCompra.length;
 }
 
 vaciar = () => {
@@ -53,6 +57,7 @@ vaciar = () => {
     productosCompra = [];
     ul2.innerHTML=" ";
     ul.innerHTML=" ";
+    cantidad.innerHTML="0"
     total.innerHTML="Total: "
     productosCompra.forEach(anexarProductoEnCarrito);
     nombreProductos.forEach(anexarProductoEnLista);
@@ -60,6 +65,9 @@ vaciar = () => {
 }
 
 comprar = () => {
+    
+    ul2.innerHTML=" ";
+    
     totalCompra=0;
     for (let i = 0; i < productosCompra.length; i++) {
         const element = productosCompra[i];
@@ -69,13 +77,14 @@ comprar = () => {
             }
         });
     }
-
+    
     if(totalCompra==0){
         alert('No seleccionaste ningun producto aun');
         return;
     }
-
     
+    
+    productosCompra.forEach(anexarProductoEnCarrito);
     total.innerHTML="Total: $" + totalCompra;
 
 }
