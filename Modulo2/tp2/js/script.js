@@ -36,6 +36,10 @@ seleccionar=(e) => {
     ul.innerHTML=" ";
     // ul2.innerHTML=" ";
     total.innerHTML="Total: ";
+    document.querySelector("title").innerHTML="Unidad 2 - TP2 ("+cantidad.innerHTML+")";
+    console.log(document.querySelector("title").innerHTML)
+    // title.innerHTML=;
+
     nombreProductos.forEach(anexarProductoEnLista);
     // productosCompra.forEach(anexarProductoEnCarrito);
 }
@@ -58,6 +62,7 @@ quitar = (e) => {
 }
 
 vaciar = () => {
+    document.querySelector("title").innerHTML="Unidad 2 - TP2"
     nombreProductos=productos.map(v=>{return v.nombre});
     productosCompra = [];
     ul2.innerHTML=" ";
