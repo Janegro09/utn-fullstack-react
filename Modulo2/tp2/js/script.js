@@ -10,7 +10,7 @@ ul2.setAttribute('class','productosCompra');
 document.querySelector(".productosDisponibles").appendChild(ul);
 document.querySelector(".productosDelCarrito").appendChild(ul2);
 
-anexarProductoEnLista = (e,i,array) => {
+anexarProductoEnLista = (e) => {
     var li = document.createElement('li');
     li.setAttribute('class','producto');
     li.onclick = seleccionar;
@@ -18,7 +18,7 @@ anexarProductoEnLista = (e,i,array) => {
     li.innerHTML = li.innerHTML + e;
 }
 
-anexarProductoEnCarrito = (e,i,array) => {
+anexarProductoEnCarrito = (e) => {
     var li = document.createElement('li');
     li.setAttribute('class','productoCarrito');
     li.onclick = quitar;
