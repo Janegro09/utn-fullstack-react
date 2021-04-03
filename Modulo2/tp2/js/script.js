@@ -34,14 +34,10 @@ seleccionar=(e) => {
 
     nombreProductos=nombreProductos.filter(e => e!=producto);
     ul.innerHTML=" ";
-    // ul2.innerHTML=" ";
     total.innerHTML="Total: ";
     document.querySelector("title").innerHTML="Unidad 2 - TP2 ("+cantidad.innerHTML+")";
-    console.log(document.querySelector("title").innerHTML)
-    // title.innerHTML=;
 
     nombreProductos.forEach(anexarProductoEnLista);
-    // productosCompra.forEach(anexarProductoEnCarrito);
 }
 
 quitar = (e) => {
@@ -76,9 +72,7 @@ vaciar = () => {
 }
 
 comprar = () => {
-    
-    ul2.innerHTML=" ";
-    
+    ul2.innerHTML=" ";    
     totalCompra=0;
     for (let i = 0; i < productosCompra.length; i++) {
         const element = productosCompra[i];
@@ -88,13 +82,10 @@ comprar = () => {
             }
         });
     }
-    
     if(totalCompra==0){
         alert('No seleccionaste ningun producto aun');
         return;
     }
-    
-    
     productosCompra.forEach(anexarProductoEnCarrito);
     total.innerHTML="Total: $" + totalCompra;
 
