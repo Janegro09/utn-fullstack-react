@@ -4,6 +4,7 @@ let body = document.querySelector("body");
 let fuente = document.querySelector(".container");
 let darkModeBottom = document.querySelector(".darkMode");
 let darkModeBottomText = document.querySelector(".darkModeText");
+let footer = document.querySelector("footer");
 
 console.log(fuente);
 let darkModeActivated = true;
@@ -19,15 +20,19 @@ const esperar = ms => {
 const darkMode = () => {
     body.style.transition=".5s"
     if(darkModeActivated){
-        body.style.color="#2C3034"
-        body.style.background="azure"
-        darkModeBottomText.innerHTML="☀"
         darkModeActivated=false;
+        darkModeBottomText.innerHTML="☀"
+        body.style.color="#2C3034"
+        table.style.background="#c3ecec"
+        body.style.background="azure"
+        footer.style.background="radial-gradient(azure, #c3ecec)"
     } else {
-        body.style.color="seashell"
-        body.style.background="#2C3034"
         darkModeActivated=true;
         darkModeBottomText.innerHTML="🌙"
+        body.style.color="seashell"
+        table.style.background="#2C3034"
+        body.style.background="#595f66"
+        footer.style.background="radial-gradient(#2C3034, #595f66)"
     }
 }
 
