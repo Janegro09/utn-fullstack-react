@@ -12,9 +12,15 @@ h1{
     text-align: center;
     margin: 20px 0;
 }
+.vaIzquierda{
+    animation-name: izquierda;
+}
+.vaDerecha{
+    animation-name: derecha;
 
-tr{
-
+}
+h3{
+    animation-name: aparecer;
 }
 .container{
     margin: 0 auto;
@@ -30,8 +36,12 @@ tr{
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-direction: alternate;
+    justify-content: center;
 }
 
+.col-4{
+    border: 1px solid;
+}
 @keyframes aparecer{
     from{
         opacity: 0;
