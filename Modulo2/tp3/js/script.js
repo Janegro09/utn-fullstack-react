@@ -12,8 +12,10 @@ const esperar = ms => {
 const dibujar = async () => {
     let titulo = document.createElement("h3");
     titulo.appendChild(document.createTextNode("Meses con 31 días"));
+    await esperar(1000);
     table.appendChild(titulo)
     
+    await esperar(2000);
     let nombreMes = document.createElement("div");
     nombreMes.className="col-4 dias";
     let nombreMes30 = document.createElement("div");
@@ -28,7 +30,8 @@ const dibujar = async () => {
     fila.appendChild(nombreMes30);
     
     table.appendChild(fila);
- 
+
+    
     for (let i = 0; i < meses.length; i++) {
         
         if(meses[i].dias == 31){
@@ -49,12 +52,13 @@ const dibujar = async () => {
             table.appendChild(fila);
         }
     }
-    table2=document.querySelectorAll(".row");
     
     let titulo2 = document.createElement("h3");
     titulo2.appendChild(document.createTextNode("Meses con menos de 31 días"));
+    await esperar(1000);
     table.appendChild(titulo2)
- 
+    await esperar(2000);
+    
     let nombreMes2 = document.createElement("div");
     nombreMes2.className="col-4 dias";
     let nombreMes302 = document.createElement("div");
