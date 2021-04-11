@@ -1,0 +1,29 @@
+body{
+    background-color: #2C3034;
+}
+
+table{
+    border:3px solid;
+}
+*{
+    color:seashell;
+}
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+tr{
+    transition: all 1 ease-in;
+}
+.container{
+    margin: 0 auto;
+    text-align: center;
+}
+.meses, .dias{
+    font-size: 20px;
+    font-weight: bold;
+}
+@keyframes fade{
+    
+}
