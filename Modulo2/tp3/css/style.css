@@ -66,4 +66,9 @@ h3{
 }
 .darkMode{
     position: absolute;
+    transition: .5s;
+    left: 5px;
+}
+.darkMode:hover{
+
 }

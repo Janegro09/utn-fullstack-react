@@ -2,6 +2,9 @@
 let table = document.querySelector(".container");
 let body = document.querySelector("body");
 let fuente = document.querySelector(".container");
+let darkModeBottom = document.querySelector(".darkMode");
+let darkModeBottomText = document.querySelector(".darkModeText");
+
 console.log(fuente);
 let darkModeActivated = true;
 
@@ -18,13 +21,20 @@ const darkMode = () => {
     if(darkModeActivated){
         body.style.color="#2C3034"
         body.style.background="seashell"
+        darkModeBottomText.innerHTML="☀"
         darkModeActivated=false;
     } else {
         body.style.color="seashell"
         body.style.background="#2C3034"
         darkModeActivated=true;
+        darkModeBottomText.innerHTML="🌙"
     }
 }
+
+darkModeBottom.addEventListener("mouseover", () => {
+})
+darkModeBottom.addEventListener("mouseout", () => {
+})
 
 const dibujar = async () => {
     let titulo = document.createElement("h3");
