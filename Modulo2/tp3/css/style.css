@@ -58,6 +58,7 @@ h3{
     box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
     padding-bottom: 30px;
     border-radius: 0 0 30px;
+    height: 100%;
 }
 .meses, .dias{
     font-size: 20px;
