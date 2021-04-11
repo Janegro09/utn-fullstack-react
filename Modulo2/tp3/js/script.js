@@ -1,5 +1,9 @@
 
 let table = document.querySelector(".container");
+let body = document.querySelector("body");
+let fuente = document.querySelector(".container");
+console.log(fuente);
+let darkModeActivated = true;
 
 const getMes = async mes => {
     return esperar(1000).then(v=>meses[mes]);
@@ -7,6 +11,19 @@ const getMes = async mes => {
 
 const esperar = ms => {
     return new Promise(resolve => setTimeout(resolve,ms))
+}
+
+const darkMode = () => {
+    body.style.transition=".5s"
+    if(darkModeActivated){
+        body.style.color="#2C3034"
+        body.style.background="seashell"
+        darkModeActivated=false;
+    } else {
+        body.style.color="seashell"
+        body.style.background="#2C3034"
+        darkModeActivated=true;
+    }
 }
 
 const dibujar = async () => {

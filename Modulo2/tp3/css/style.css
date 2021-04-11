@@ -1,13 +1,12 @@
 body{
     background-color: #2C3034;
+    color:seashell;
 }
 
 table{
     border:3px solid;
 }
-*{
-    color:seashell;
-}
+
 h1{
     text-align: center;
     margin: 20px 0;
@@ -27,6 +26,7 @@ h3{
     animation-timing-function: linear;
     animation-direction: alternate;
     justify-content: center;
+    padding: 10px 0;
 }
 .container{
     margin: 0 auto;
@@ -63,4 +63,7 @@ h3{
     to{
         left: 0px;
     }
+}
+.darkMode{
+    position: absolute;
 }
