@@ -14,7 +14,7 @@ h1{
 }
 
 tr{
-    transition: all 1 ease-in;
+
 }
 .container{
     margin: 0 auto;
@@ -24,6 +24,19 @@ tr{
     font-size: 20px;
     font-weight: bold;
 }
-@keyframes fade{
-    
+.row{
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

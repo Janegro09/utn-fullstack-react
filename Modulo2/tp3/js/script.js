@@ -2,7 +2,7 @@
 let table = document.querySelector(".container");
 
 const getMes = async mes => {
-    return esperar(100).then(v=>meses[mes]);
+    return esperar(1000).then(v=>meses[mes]);
 }
 
 const esperar = ms => {
