@@ -1,6 +1,8 @@
 body{
+    margin: 0 auto;
     background-color: #2C3034;
     color:seashell;
+    width: 50%;
 }
 
 table{
@@ -31,6 +33,12 @@ h3{
 .container{
     margin: 0 auto;
     text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+    padding-bottom: 30px;
+    border-radius: 0 0 30px;
+    transition: .5s;
 }
 .meses, .dias{
     font-size: 20px;

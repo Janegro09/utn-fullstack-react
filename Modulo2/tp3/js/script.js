@@ -20,7 +20,7 @@ const darkMode = () => {
     body.style.transition=".5s"
     if(darkModeActivated){
         body.style.color="#2C3034"
-        body.style.background="seashell"
+        body.style.background="azure"
         darkModeBottomText.innerHTML="☀"
         darkModeActivated=false;
     } else {
