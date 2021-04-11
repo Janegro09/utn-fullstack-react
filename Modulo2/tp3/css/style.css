@@ -32,6 +32,7 @@ footer{
 }
 a{
     text-decoration: none;
+    padding: 0 10px;
 }
 h3{
     animation-name: derecha;
@@ -49,17 +50,14 @@ h3{
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
-    
     background-color: #2C3034;
     text-align: center;
 
-    
     -webkit-box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
     padding-bottom: 30px;
     border-radius: 0 0 30px;
-    height: 100%;
 }
 .meses, .dias{
     font-size: 20px;
