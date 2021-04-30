@@ -38,7 +38,7 @@ app.get('/',function(req,res){
     <body>
         <div class="formulario">
             <h2>Trabajo práctico N°2</h2>
-            <form method="POST" action="inicio/">
+            <form method="POST" action="/">
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre</label>
                     <input type="text" class="form-control" name="nombre" required>
@@ -71,7 +71,7 @@ app.get('/',function(req,res){
 });
 
 
-app.post('/inicio',function(req,res){
+app.post('/',function(req,res){
     const { nombre, apellido, celular, paisNac, paisResi } = req.body
     res.send(`
     <!DOCTYPE html>
