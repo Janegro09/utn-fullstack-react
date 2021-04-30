@@ -10,11 +10,21 @@ console.log(fuente);
 let darkModeActivated = true;
 
 const getMes = async mes => {
-    return esperar(1000).then(v=>meses[mes]);
+    let mesEncontrado = esperar(1000).then(v=>meses[mes]);
+    return mesEncontrado;
 }
 
+// async function getMes (mes) {
+//     console.log(meses[mes])
+//     let mesEncontrado = esperar(1000)
+//     return meses[mes];
+// }
+
+
 const esperar = ms => {
-    return new Promise(resolve => setTimeout(resolve,ms))
+    let promesa = new Promise(resolve => setTimeout(resolve,ms));
+    console.log(promesa);
+    return promesa
 }
 
 const darkMode = () => {

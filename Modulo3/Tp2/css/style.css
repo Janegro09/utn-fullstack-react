@@ -1,0 +1,15 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+*{
+    font-size: 16px;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+.formulario {
+    width: 40%;
+    margin: 10vh auto;
+}
