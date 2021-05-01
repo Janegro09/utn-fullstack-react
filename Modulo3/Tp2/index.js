@@ -84,7 +84,7 @@ app.post('/', function(req,res){
     res.send(
         `
         ${cabecera}
-        Bienvenido ${nombre} ${apellido}, tu celular es ${celular}. Tu pais de nacimiento es ${paisNac} y recides en ${paisResi} <br>
+        Bienvenido ${nombre} ${apellido}, tu celular es ${celular}. Tu pais de nacimiento es ${paisNac} y resides en ${paisResi} <br>
         <a href="/">Ir a registrarse </a>
         ${cierre}
         `
