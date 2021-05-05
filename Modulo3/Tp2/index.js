@@ -8,7 +8,10 @@ const PORT = 3005;
 
 var express = require('express');
 var app = express();
+
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }))
+
 const cabecera = `
 <!DOCTYPE html>
     <html lang="en">
@@ -44,42 +47,13 @@ const cierre = `
     </body>
     </html>
     `
-const formulario = `
-    <form method="POST" action="/">
-    <div class="mb-3">
-    <label for="nombre" class="form-label">Nombre</label>
-    <input type="text" class="form-control" name="nombre" required>
-    </div>
-    <div class="mb-3">
-    <label for="apellido" class="form-label">Apellido</label>
-    <input type="text" class="form-control" name="apellido" required>
-    </div>
-    <div class="mb-3">
-    <label for="celular" class="form-label">Número de celular</label>
-    <input type="number" class="form-control" name="celular" required>
-    </div>  
-    <div class="mb-3">
-    <label for="paisNac" class="form-label">Pais de nacimiento</label>
-    <input type="text" class="form-control" name="paisNac" required>
-    </div>
-    <div class="mb-3">
-    <label for="paisResi" class="form-label">Pais de residencia</label>
-    <input type="text" class="form-control" name="paisResi" required>
-    </div>
 
-    <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-`
 
-app.get('/', function(req,res){
-    res.send(`
-    ${cabecera}
-    ${formulario}
-    ${cierre}
-    `);
+app.get('/form', function(req,res){
+    res.sendFile('/public/index.html', {root:__dirname});
 })
 
-app.post('/', function(req,res){
+app.post('/datos', function(req,res){
     const { nombre, apellido, celular, paisNac, paisResi } = req.body
     res.send(
         `
