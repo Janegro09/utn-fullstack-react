@@ -25,15 +25,25 @@ const cabecera = `
             * {
                 font-size: 16px;
             }
+            
             h2 {
                 text-align: center;
+                font-weight: bold;
             }
+            
             body {
                 font-family: 'Lato', sans-serif;
+                background-color: #F46A24;
+                color:#fff
             }
+            
             .formulario {
                 width: 40%;
                 margin: 10vh auto;
+            }
+            
+            label {
+                font-weight: bold;
             }
         </style>
         <title>TP2 - Formulario con nodejs</title>
@@ -59,7 +69,7 @@ app.post('/datos', function(req,res){
         `
         ${cabecera}
         Bienvenido ${nombre} ${apellido}, tu celular es ${celular}. Tu pais de nacimiento es ${paisNac} y resides en ${paisResi} <br>
-        <a href="/">Ir a registrarse </a>
+        <a class="btn btn-success" href="/">Ir a registrarse </a>
         ${cierre}
         `
         )

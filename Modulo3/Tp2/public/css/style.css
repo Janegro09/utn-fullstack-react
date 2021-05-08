@@ -4,10 +4,13 @@
 
 h2 {
     text-align: center;
+    font-weight: bold;
 }
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #F46A24;
+    color:#fff
 }
 
 .formulario {
@@ -15,3 +18,6 @@ body {
     margin: 10vh auto;
 }
 
+label {
+    font-weight: bold;
+}
