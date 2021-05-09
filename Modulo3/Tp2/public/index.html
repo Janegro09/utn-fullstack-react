@@ -11,31 +11,41 @@
     </head>
     <body>
         <h2 class="mt-5">Trabajo práctico N°2</h2>
-        <div class="formulario">
-            <form method="POST" action="/datos">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" name="nombre" required>
+        <div class="row">
+            <div class="col">
+                <div class="inicio">
+                    <img src="img/sign-form.svg" alt="">
                 </div>
-                <div class="mb-3">
-                    <label for="apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" name="apellido" required>
+            </div>
+            <div class="col">
+                <div class="formulario">
+                    <form method="POST" action="/datos">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" name="apellido" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="celular" class="form-label">Número de celular</label>
+                            <input type="number" class="form-control" name="celular" required>
+                        </div>  
+                        <div class="mb-3">
+                            <label for="paisNac" class="form-label">Pais de nacimiento</label>
+                            <input type="text" class="form-control" name="paisNac" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paisResi" class="form-label">Pais de residencia</label>
+                            <input type="text" class="form-control" name="paisResi" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="celular" class="form-label">Número de celular</label>
-                    <input type="number" class="form-control" name="celular" required>
-                </div>  
-                <div class="mb-3">
-                    <label for="paisNac" class="form-label">Pais de nacimiento</label>
-                    <input type="text" class="form-control" name="paisNac" required>
-                </div>
-                <div class="mb-3">
-                    <label for="paisResi" class="form-label">Pais de residencia</label>
-                    <input type="text" class="form-control" name="paisResi" required>
-                </div>
-                
-                <button type="submit" class="btn btn-success">Enviar</button>
-            </form>
+            </div>
         </div>
+
     </body>
 </html>

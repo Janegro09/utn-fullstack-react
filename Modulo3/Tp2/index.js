@@ -58,10 +58,9 @@ const cierre = `
     </html>
     `
 
-
-app.get('/form', function(req,res){
-    res.sendFile('/public/index.html', {root:__dirname});
-})
+// app.get('/form', function(req,res){
+//     res.sendFile('/public/index.html', {root:__dirname});
+// })
 
 app.post('/datos', function(req,res){
     const { nombre, apellido, celular, paisNac, paisResi } = req.body

@@ -14,8 +14,22 @@ body {
 }
 
 .formulario {
-    width: 40%;
+    width: 50%;
     margin: 10vh auto;
+}
+
+.inicio {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    filter: invert(1) opacity(0.7);
+}
+.inicio img {
+    width: 50vh;
+    transform: translate(-50%, -50%);
+}
+.row {
+    width: 100%;
 }
 
 label {
